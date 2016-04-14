@@ -15,26 +15,59 @@
     margin: 0 0 15px;
     padding: 0;
     list-style: none;
+    @include cross-browser-rule('column-count', 2);
+
   }
 
   &__item {
     padding: 0 0 5px;
-    color: $LIGHT;
     font-family: $HEADLINE_FONT;
-    font-size:20px;
+    font-size:18px;
     line-height:27px;
+
+    [class^="icon-"]:before {
+      color: $PRIMARY;
+      font-size: 13px;
+      margin: 0 10px;
+    }
+
+
+    .icon-x-coord:before {
+      content: "\e902";
+    }
+
+    .icon-y-coord:before {
+      content: "\e903";
+      font-size: 19px;
+    }
+
+    .icon-width:before {
+      content: "\e901";
+    }
+
+    .icon-height:before {
+      content: "\e900";
+      font-size: 19px;
+    }
 
     &-label {
       color: $GRAY;
-      width: 70px;
       display: inline-block;
+    }
+
+    &-value {
+      color: $LIGHT;
+      float: right;
+    }
+    &:first-child, &:nth-child(2) {
+      width: 120px;
     }
   }
 
   &__title {
     color: $PRIMARY;
     font-family: $HEADLINE_FONT;
-    font-size:22px;
+    font-size:18px;
     line-height:30px;
     margin: 0 0 20px;
     text-transform: uppercase;

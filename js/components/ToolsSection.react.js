@@ -75,16 +75,24 @@ var ToolsSection = React.createClass({
                 <h5 className="tools__title">{layer.name}</h5>
                 <ul className="tools__list">
                     <li className="tools__item">
-                        <span className="tools__item-label">X:</span> {layer.x}px
+                        <span className="tools__item-label">X:</span>
+                        <span className="icon-x-coord"></span>
+                        <span className="tools__item-value">{layer.x} px</span>
                     </li>
                     <li className="tools__item">
-                        <span className="tools__item-label">Y:</span> {layer.x}px
+                        <span className="tools__item-label">Y:</span>
+                        <span className="icon-y-coord"></span>
+                        <span className="tools__item-value">{layer.y} px</span>
                     </li>
                     <li className="tools__item">
-                        <span className="tools__item-label">Width:</span> {layer.width}px
+                        <span className="tools__item-label">Width:</span>
+                        <span className="icon-width"></span>
+                        <span className="tools__item-value">{layer.width} px</span>
                     </li>
                     <li className="tools__item">
-                        <span className="tools__item-label">Height:</span> {layer.height}px
+                        <span className="tools__item-label">Height:</span>
+                        <span className="icon-height"></span>
+                        <span className="tools__item-value">{layer.height} px</span>
                     </li>
                 </ul>
 

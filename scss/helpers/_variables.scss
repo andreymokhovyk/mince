@@ -5,7 +5,7 @@
 // Colors
 $DEFAULT            : #464547;
 $LIGHT              : #fff;
-$PRIMARY            : #39C2D7;
+$PRIMARY            : #00abbe;
 $PRIMARY_MUTED      : #1A9CB0;
 $PRIMARY_CTRL       : #A3C644;
 $PRIMARY_CTRL_MUTED : #7F993A;
@@ -15,8 +15,9 @@ $MEDIUM_GRAY        : #666;
 $GRAY               : #999;
 $LIGHT_GRAY         : #ccc;
 
-$HEADLINE_FONT      : 'SourceSansPro', Helvetica, sans-serif;
-$DEFAULT_FONT       : 'SourceSansPro', Helvetica, sans-serif;
+$HEADLINE_FONT      : 'SourceSansProSemibold', Helvetica, sans-serif;
+$DEFAULT_FONT       : 'SourceSansProRegular', Helvetica, sans-serif;
+$ICONS_FONT         : 'icomoon';
 
 
 $mainFontSize: 38px;
